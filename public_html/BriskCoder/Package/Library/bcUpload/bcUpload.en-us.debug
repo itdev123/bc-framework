@@ -1,0 +1,13 @@
+[bcUpload::1000]
+EDITOR  = 0
+TYPE    = "IMPLEMENTATION"
+TITLE   = "UNDEFINED NAMESPACE"
+PROBLEM = "Namespace is required and must be set."
+SOLUTION = "Define a namespace by setting: <b>bcUpload::useNamespace( 'your_namespace' );</b>"
+
+[bcUpload::1001]
+EDITOR  = 0
+TYPE    = "IMPLEMENTATION"
+TITLE   = "NAMESPACE MISSMATCH"
+PROBLEM = "<b>bcUpload::useNamespace( 'your_namespace' );</b> does not match the name for the input file."
+SOLUTION = "Assure that each parameter name of your input type file matches the namespaces given to: <b>bcUpload::useNamespace( 'your_input_file_name' );</b>"

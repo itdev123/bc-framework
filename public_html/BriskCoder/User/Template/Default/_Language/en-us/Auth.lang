@@ -1,0 +1,2 @@
+AJAX.ATTEMPT_COUNT = "Failed attempt number: %d of %d"
+AJAX.ATTEMPT_LAST = "One more attempt will lock the account! Please allow %d minutes before a new attempt is made"

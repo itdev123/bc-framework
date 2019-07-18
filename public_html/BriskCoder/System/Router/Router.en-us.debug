@@ -1,0 +1,6 @@
+[1]
+EDITOR  = 0
+TYPE    = "ERROR 404"
+TITLE   = "DISPATCHER NOT FOUND."
+PROBLEM = "The dispatcher class named <b>{0}</b> does not exist."
+SOLUTION = "Check your project's Dispatcher Layer for the dispatcher class <b>{0}</b>.<br /> Also check for wrong <b>namespace</b> specially if dispatcher is in a sublevel directory."

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--bc.HEAD_META-->
+        <title>Title and Metatags Dynamic Inclusion</title>
+        <!--bc-->
+        <!--bc.HEAD_LINKS--><!--bc-->
+        <!--bc.bcNavTrail-includes--><!--bc-->
+        <!--bc.bcNavPager-includes--><!--bc-->
+    </head>
+    <body> 
+        <div id="teB-wrapper">
+            <!--bc.HEADER-->Header Section<!--bc-->
+            <div id="teB-center">
+                <br>
+                <br>
+                <br>
+                <div class="bcNavTrailWrapper">
+                    <!--bc.NavTrail-->
+                    Navigation Trail Happens Here
+                    <!--bc-->
+                </div>
+                <!--bc.FormFilter--><!--bc-->
+                <div class="bcNavPagerWrapper">   
+                    <!--bc.NavPagerSizeSelector-->
+                    Page Size Selector
+                    <!--bc-->
+                    <!--bc.NavPager-->
+                    Navigation Pager
+                    <!--bc-->  
+                    <!--bc.NavPagerSelector-->
+                    NavPagerSelector
+                    <!--bc-->  
+                    <!--bc.NavPagerRecordsInfo-->
+                    Nav Pager Records Info
+                    <!--bc-->
+                </div> 
+
+                <h2>should not get click</h2> 
+                <span data-bind="three" class="foo" style="color:red;display:none;">text inner inside</span>
+                <div id="ns" >
+                    <p><span><span data-bind="one" class="foo" style="color:red;" >text inside</span></span></p>
+                    <span>text inside</span><br>
+                    <span data-bind="two" >text inside
+                        <span data-bind="three" class="foo" style="color:red;" onclick="foo();">text inner inside<span>another text</span></span>
+                    </span>
+                </div>
+                <input type="text" name="foo" value="" onblur="bc.formControl.validateRequired(this, '<b style=&quot;font-size:45px;color:blue;&quot;>fail</b>', '<b style=&quot;font-size:45px;color:blue;&quot;>SUCCESS</b>', '#ns');">
+
+
+
+            </div>
+
+            <!--bc.FOOTER-->Footer Section<!--bc-->
+        </div>
+        <script language="javascript">
+
+
+
+            // BriskCoder.selector('#ns span').append( '<div style="text-weight:bolder;">Works</div>');
+
+            bc.ready(function () {
+
+                /*
+                 BriskCoder.selector('input[name="foo"]').event('keypress keyup',function(e){
+                 console.log(e);
+                 });
+                 */
+                bc.selector('h2').event('click', function () {
+                    bc.selector('#ns').html('<b style="font-size:45px;color:red;">HTML TEST</b>');
+                });
+
+                //console.log(BriskCoder.thisNode);
+
+                /* ajax test
+                 BriskCoder.ajax({
+                 url: '/office/test?foo=bar',
+                 type: 'POST',
+                 data: {foo:'text',bar:'100'},
+                 success: function(data){
+                 d = JSON.parse(data);
+                 console.log(d.foo);
+                 }
+                 });
+                 */
+                //var id = new Date().getTime().toString();
+                // BriskCoder.selector('#ns').append('<h2>' + id + '</h2>');
+
+
+                // });
+            });
+        </script>
+    </body>
+</html>

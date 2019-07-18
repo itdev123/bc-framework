@@ -1,0 +1,38 @@
+.use-selec-none{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.bc-hide-columns-btn{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: red;
+    cursor: pointer;
+    float: right;
+}
+.bc-hide-columns-wrapper{
+    position: absolute;
+    width: 180px;
+    padding: 5px;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    z-index: 99;
+}
+.bc-hide-columns-wrapper .bc-columns-trigger{
+    width: auto!important;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.bc-hide-columns-wrapper label{
+    width: 90%;
+    font-weight: normal;
+}

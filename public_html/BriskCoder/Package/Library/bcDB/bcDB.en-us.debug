@@ -1,0 +1,22 @@
+[DB-CONN:10000]
+EDITOR  = 0
+TYPE    = "DATABASE ERROR"
+TITLE   = "DATA CONNECTION ERROR"
+PROBLEM = "CONNECTION COULD NOT BE ESTABLISHED: <b>{0}</b>."
+SOLUTION = "Set a valid database connection for the namespace <b>{0}</b>."
+
+[DB-CONN:10001]
+EDITOR  = 0
+TYPE    = "DATABASE ERROR"
+TITLE   = "DATA CONNECTION ERROR"
+PROBLEM = "DATABASE DRIVER: <b>{0}</b> SET FOR SCHEMA <b>{1}</b> IS NOT SUPPORTED."
+SOLUTION = "Set a valid database driver for the schema <b>{0}</b> check documentation for help."
+
+
+[DB-CONN:10002]
+EDITOR  = 0
+TYPE    = "DATABASE ERROR"
+TITLE   = "DATA QUERY ERROR"
+PROBLEM = "SQL CODE: <b>{0}</b>."
+SOLUTION = "Fix SQL statement"
+

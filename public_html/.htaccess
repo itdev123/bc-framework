@@ -1,0 +1,39 @@
+Options -Indexes  
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+
+#RewriteRule /([^/\.]+)/?$ one/?page=$1 [L]
+#RewriteRule /([^/\.]+)\.jsp$ adm/?q=$1 [L]   # /any-name.jsp
+#RewriteRule ^[A-Za-z-]+\/admin/([A-Za-z0-9-]+)/?$ admin/?q=$1 [L] # /any-name/admin/q=string
+#RewriteRule ^store/(.*)$ administration/task-exec?page=$1 [L]
+
+# make sure PHP_AUTH_USER and PHP_AUTH_PW are populated when CGI mode
+##SetEnvIfNoCase ^Authorization$ "(.+)" HTTP_AUTHORIZATION=$1
+# Block out any script trying to base64_encode data within the URL.
+##RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+# Block out any script that includes a <script> tag in URL.
+##RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL.
+##RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL.
+##RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Return 403 Forbidden header and show the content of the root homepage
+##RewriteRule .* index.php [F]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+
+
+
+
+
+<FilesMatch "\.(htaccess|htpasswd|te|ini|log|bak)$">
+	Order allow,deny
+	Deny from all
+</FilesMatch>

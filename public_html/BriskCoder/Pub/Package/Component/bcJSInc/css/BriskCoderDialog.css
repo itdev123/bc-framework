@@ -1,0 +1,43 @@
+.bc-js-dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+/*TODO GIVE OPTION TO SET DIMENSIONS ON BC.DIALOG*/
+.bc-js-dialog-inner{
+    display: inline-table;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: auto;
+    margin: auto;
+    border: 1px solid #aaa;
+    background: #eee;
+}
+.bc-js-dialog-header{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: #ddd;
+}
+.bc-js-dialog-header-title{
+    display: inline-block;
+    width: 89%;
+}
+.bc-js-dialog-contents{
+    overflow-y: auto;
+    padding: 10px;
+    background: #fff;
+}
+.bc-js-dialog-buttons{
+    text-align: right;
+    padding: 10px;
+}
+.bc-js-dialog-button{
+    display: inline-block;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>ACO Demo</title>
+        <meta name="description" content="ACO Accessibility Tool">
+        <!--bc.head_includes-->Head Includes<!--bc-->
+    </head>
+    <body>
+        <!--bc.header-->Header Placeholder<!--bc-->
+
+        <!-- Main -->
+        <main id="main">
+
+
+          <div id="corner-peeler" data-toggle="modal" data-target="#exampleModalLong">
+            <div id="peeler-container">
+              <span class="fpc_button_text_1">SWITCH</span>
+              <span class="fpc_button_text_2">TEMPLATE</span>
+              <img class="fpc_corner-button-icon" src="/FrontEnd/Media/DigiSpider/img/icon-switching.png" alt="Preview Icon">
+            </div>
+            <img id="curl" src="/FrontEnd/Media/DigiSpider/img/fold.png">
+          </div>
+
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" style="text-align:center;" id="exampleModalLongTitle">Please select one of the templates below.</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+                    <form id="form-templates" class="row text-center" action="/" title="" method="post">
+                       <!--bc.view-theme-->Please Select Themes Here<!--bc-->
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+            <div class="container form-interface nopadding">
+
+                <div class="row padding-bottom-std home-title">
+                    <h1>CONVERT YOUR WEBSITE TO <br>ADA COMPLIANT IN JUST THREE STEPS</h1>
+                </div>
+
+                <div class="row padding-bottom-std">
+                    <form class="conversion-form" method="post" action="/process">
+                        <div class="col-md-1 hidden-sm">
+                        </div>
+                        <div class="col-md-8 mobile-padding padding-left-overwrite clearfix">
+                            <input id="web_address" type="url" name="web_address" required pattern="https?://.+" placeholder="http://yoursite.com" onfocus="this.placeholder = '';" onblur="this.placeholder = 'http://yoursite.com';" >
+                        </div>
+                        <div class="col-md-2 nopadding padding-left-overwrite clearfix btn-start">
+                            <input id="start-domain" value="START" type="submit" class="button">
+                        </div>
+                        <div class="col-md-1 hidden-sm">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="row section_features">
+
+                    <div class="features-col-1 col-md-4 nopadding bg-ultra-light">
+                        <div class="features-icon">
+                            <img src="/FrontEnd/Media/DigiSpider/img/Home_Icon_1.png" alt="Preview Icon">
+                        </div>
+                        <div class="features-desc-1">
+                            <h2>preview</h2>
+                            <p>By typing your website above, <br>see a preview of your <br>ADA Compliance website.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-col-2 col-md-4 nopadding bg-dark">
+                        <div class="features-icon">
+                            <img src="/FrontEnd/Media/DigiSpider/img/Home_Icon_2.png" alt="Preview Icon">
+                        </div>
+                        <div class="features-desc-2">
+                            <h2>convert</h2>
+                            <p>Your website with a single click.</p>
+                        </div>
+                    </div>
+
+                    <div class="features-col-3 col-md-4 nopadding bg-light">
+                        <div class="features-icon">
+                            <img src="/FrontEnd/Media/DigiSpider/img/Home_Icon_3.png" alt="Preview Icon">
+                        </div>
+                        <div class="features-desc-3">
+                            <h2>customize</h2>
+                            <p>Your visitor's experience<br>by using accessibility tools.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+        <!--bc.footer-->Footer Placeholder<!--bc-->
+    </body>
+</html>

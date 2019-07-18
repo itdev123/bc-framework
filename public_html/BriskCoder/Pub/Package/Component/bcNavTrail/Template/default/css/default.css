@@ -1,0 +1,34 @@
+.bcNavTrailWrapper{
+    width: 99%;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+a.bcNavTrail{
+    font-size: 14px;
+    text-decoration: none;  
+}
+.bcNavTrail-divider{
+    font-size: 14px;    
+    padding:0 5px;    
+}
+.bcNavTrail-disabled{
+    color: #026978;
+}
+.bcNavTrail-attr{
+    font-size: 14px;  
+    text-transform: capitalize;    
+}
+.bcNavTrail-attr-divider{   
+    padding: 0 5px;
+    font-weight: bold;
+}
+.bcNavTrail-attr-img{
+    padding: 0 12px;
+    cursor: pointer;
+    background: url('/BriskCoder/Pub/Package/Component/bcNavTrail/Template/default/img/remove.png') no-repeat right 0;
+}
+.bcNavTrail-attr-img:hover{
+    background: url('/BriskCoder/Pub/Package/Component/bcNavTrail/Template/default/img/remove.png') no-repeat right -24px;
+}

@@ -1,0 +1,50 @@
+/*DatePicker*/
+.bc-datepicker-wrapper{
+    position: absolute;   
+    padding: 5px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.bc-datepicker-tbl-days{
+    width: 100%;
+    height: 105px;
+}
+.bc-datepicker-tbl-days td{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; 
+}
+.bc-datepicker-controls{
+    margin-bottom: 5px;
+}
+.bc-datepicker-month{
+    width: 80%;
+}
+.bc-datepicker-controls-l,
+.bc-datepicker-controls-r{  
+    width: 9%;    
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background: #eee;
+}
+.bc-datepicker-controls-l:hover,
+.bc-datepicker-controls-r:hover{
+    background: #fcfcfc;
+}
+.bc-datepicker-month,
+.bc-datepicker-controls-l,
+.bc-datepicker-controls-r{
+    display: inline-block;
+    padding: 5px 0;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.bc-datepicker-day{
+    display: block;
+    cursor: pointer;
+}
+.bc-datepicker-day:hover,
+.bc-datepicker-day.selected{
+    background: #eee;
+}

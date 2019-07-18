@@ -1,0 +1,131 @@
+html,body{
+    width:100%;
+    height: 100%;
+    margin:0px;
+    padding:0px;
+    overflow-y: hidden;
+}
+.clear{
+    clear:both;
+}
+#bc-wizard-debugger-top{
+    width:auto;
+    height:120px;
+    min-width: 998px;
+    left:0px;
+    right:0px;
+    position: absolute;
+    background:#444;
+}
+#bc-wizard-debugger-top-logo{
+    width:300px;
+    height:108px;
+    position: absolute;
+    top:6px;
+    left: 6px;
+    float:left;
+}
+#bc-wizard-debugger-top-middle{
+    width:auto;
+    height:108px;
+    float:left;
+    position: absolute;
+    top:6px;
+    left: 312px;
+    right:312px;
+}
+#bc-wizard-debugger-top-right{
+    width:300px;
+    height:108px;
+    float:right;
+    margin:6px 6px 0 6px;
+}
+
+#bc-wizard-debugger-center-wrapper{
+    width:auto;
+    height:auto;
+    min-width: 986px;
+    padding:0 6px 6px 6px;
+    top:120px;
+    left:0px;
+    right:0px;
+    bottom:80px;
+    position:absolute;
+    overflow:auto;
+    background:#aaa;
+}
+#bc-wizard-debugger-bottom{
+    width:auto;
+    height:80px;
+    min-width: 998px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    position: absolute;
+    background:#444;
+}
+
+
+.bc-wizard-debugger-inner-wrapper{
+    width:auto;
+    height:auto;
+    margin-top:6px;
+}
+.bc-debugger-tbl{
+    width: 100%;
+    text-align: left;
+}
+.bc-debugger-tbl-line-spacer{
+    height: 6px;
+}
+.bc-wizard-debugger-tbl-number{
+    width:100px;
+    text-align: center;
+    color:#fff;
+    background:#000;
+}
+#bc-wizard-debugger-info-title{
+    height: 30px;
+    font:bolder 14px/30px Verdana, Arial;
+    text-align: center;
+    background:#fff;
+}
+.bc-wizard-debugger-info-subtitle{
+    width:33%;
+    height: 25px;
+    padding-left:10px;
+    font:bolder 13px/25px Verdana, Arial;
+    color:#fff;
+    background:#777;
+}
+.bc-wizard-debugger-info-subtitle-cell{
+    height: 30px;
+    padding-left:10px;
+    font:13px/30px Monospace, Arial;
+    background:#fff;
+}
+
+
+
+#bc-wizard-debugger-breakpoint-title{
+    height: 30px;
+    padding-left:10px;
+    font:bolder 14px/30px Verdana, Arial;
+    color:#fff;
+    background:#555;
+}
+
+.bc-wizard-debugger-tbl-subtitle{
+    width:100px;
+    height: 25px;
+    padding-left:10px;
+    font:bolder 13px/25px Verdana, Arial;
+    color:#fff;
+    background:#777;
+}
+.bc-wizard-debugger-tbl-subtitle-cell{
+    height: 25px;
+    padding-left:10px;
+    font:13px/25px Monospace, Arial;
+    background:#fff;
+}

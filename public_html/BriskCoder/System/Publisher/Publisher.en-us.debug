@@ -1,0 +1,35 @@
+[0]
+EDITOR  = 0
+TYPE    = "FILESYSTEM FAULT"
+TITLE   = "Cache Directory Not Found."
+PROBLEM = "BriskCoder/Pub/Cache directory can not be found in the server root."
+SOLUTION = "Check if bc::$PRIVATE_PATH and bc::$PUBLIC_PATH are set correctly."
+
+[1]
+EDITOR  = 0
+TYPE    = "FILESYSTEM FAULT"
+TITLE   = "Cache Directory Not Writeable."
+PROBLEM = "BriskCoder/Pub/Cache directory MUST be WRITEABLE."
+SOLUTION = "Make sure that BriskCoder/Pub/Cache directory is granted proper permissions."
+
+[2]
+EDITOR  = 0
+TYPE    = "EXTENSION NOT LOADED"
+TITLE   = "cURL extension not found"
+PROBLEM = "Trying to use Remote Tiers but cURL extention not present."
+SOLUTION = "Install cURL extension or set Remote Tiers to 0."
+
+[3]
+EDITOR  = 0
+TYPE    = "TEMPLATE FILE NOT FOUND"
+TITLE   = "MISSING TEMPLATE FILE"
+PROBLEM = "There's a problem trying to load the current template file <b>{0}</b>."
+SOLUTION = "Verify that the file <b>{0}</b> exists in the Publisher Layer. Do not forget you might be rendering a custom template file name.<br />
+            If you want to load a custom named Template file then you must pass its name through the method: <b>bc::publisher()->render('CUSTOM_FILE')</b>"
+
+[4]
+EDITOR  = 0
+TYPE    = "COMPONENT FILE NOT FOUND"
+TITLE   = "MISSING COMPONENT FILE"
+PROBLEM = "There's a problem trying to load the current component file <b>{0}</b>."
+SOLUTION = "Verify that the file <b>{0}</b> exists in public_html/BriskCoder/Pub/Package/Component path."

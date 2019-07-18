@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>BriskCoder::Wizard - CoreDebugger</title>
+    <link rel="stylesheet" type="text/css" href="/BriskCoder/Pub/Media/CSS/Debugger/CoreDebugger.css" />
+</head>
+<body>
+    <div id="bc-wizard-debugger-top">
+        <div id="bc-wizard-debugger-top-logo">logo</div>
+        <div id="bc-wizard-debugger-top-middle">middle</div>
+        <div id="bc-wizard-debugger-top-right">right</div>
+    </div>
+    <div id="bc-wizard-debugger-center-wrapper">
+        <div class="bc-wizard-debugger-inner-wrapper">
+            <table class="bc-debugger-tbl" cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <!--BC.DEBUGGER-INFO-->
+                    <tr>
+                        <th colspan="3" id="bc-wizard-debugger-info-title">TITLE</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="bc-debugger-tbl-line-spacer"></td>
+                    </tr>
+                    <tr>
+                        <th class="bc-wizard-debugger-info-subtitle">Level:</th>
+                        <th class="bc-wizard-debugger-info-subtitle">Code:</th>
+                        <th class="bc-wizard-debugger-info-subtitle">Type:</th>
+                    </tr>
+                    <tr>
+                        <td class="bc-wizard-debugger-info-subtitle-cell">level name</td>
+                        <td class="bc-wizard-debugger-info-subtitle-cell">code number</td>
+                        <td class="bc-wizard-debugger-info-subtitle-cell">type name</td>
+                    </tr>
+                    <!--BC.END-->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bc-wizard-debugger-inner-wrapper">
+            <table class="bc-debugger-tbl" cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <!--BC.DEBUGGER-BREAKPOINT-->
+                    <tr>
+                        <th colspan="2" id="bc-wizard-debugger-breakpoint-title">BREAKPOINT:</th>
+                    </tr>
+                    <tr>
+                        <th class="bc-wizard-debugger-tbl-subtitle">File:</th>
+                        <td class="bc-wizard-debugger-tbl-subtitle-cell">file name</td>
+                    </tr>
+                    <tr>
+                        <th class="bc-wizard-debugger-tbl-subtitle">Line:</th>
+                        <td class="bc-wizard-debugger-tbl-subtitle-cell">line number</td>
+                    </tr>
+                    <!--BC.END-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="bc-wizard-debugger-bottom"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.bcFormControl-login-fb{
+    display: block;
+    padding: 15px 15px 15px 60px;
+    margin: 5px auto;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    background: #000;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+.bcFormControl-login-fb{
+    background: #3b5998 url('/BriskCoder/Pub/Package/Component/bcFormControl/Template/default/img/UiWizard/Login/fb.png') no-repeat 15px center;  
+}
+.bcFormControl-login-fb:hover,
+.bcFormControl-login-fb:focus,
+.bcFormControl-login-fb:active{
+    background: #8b9dc3 url('/BriskCoder/Pub/Package/Component/bcFormControl/Template/default/img/UiWizard/Login/fb.png') no-repeat 15px center;  
+}
+#bcFormControl-login-fb-msg{
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+#bcFormControl-login-fb-msg .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+#bcFormControl-login-fb-msg .text{
+    padding: 50px 80px;
+    font-size: 14px;
+}
+#bcFormControl-login-fb-msg .button-close{
+    padding: 5px 10px;
+    color: #CE2415;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+#bcFormControl-login-fb-msg .button-close:hover{
+    color: #F54D3E;
+}
+#bcFormControl-login-fb-msg .button-confirm{
+    color: #FFFFFF;
+    float: right;
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: 10px;
+    background: #10B2D8;
+    border-radius: 5px;
+}
+#bcFormControl-login-fb-msg .button-confirm:hover{
+    background: #000;
+}

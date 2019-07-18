@@ -1,0 +1,112 @@
+*:focus{
+    outline: 0;
+    outline: thin dotted \9;/* IE6-9 */
+}
+a, a:link, a:visited{
+    text-decoration: none;
+    color:rgb(63,200,220);
+}
+a:hover{
+    color:rgb(130,220,255);
+}
+table{
+    width:50%;
+    margin: 0 auto;
+}
+th{
+    text-align: center;
+    font:bold 15px Verdana; 
+    padding:8px 0px;
+}
+label{
+    display: inline-block;
+    cursor: pointer;
+    font:bold 13px Verdana;     
+}
+button,
+input,  
+select,
+textarea {
+    margin: 0;
+    font-size: 100%;
+    vertical-align: middle;
+    width:96%;
+    font:bold 14px Verdana; 
+    color:#aaa;
+    text-align: center;
+}
+select{
+    width:100%;
+}
+button,
+input {
+    *overflow: visible;
+    line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+input[type="image"] {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+input[type="hidden"] {
+    display: none;
+}
+textarea {
+    height: auto;
+    overflow: auto;
+    vertical-align: top;
+}
+
+
+input,
+textarea,
+select{
+    padding:2%;
+    border-radius: 10px;
+    border:1px solid #bbb;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.20);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.20);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.20);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+input[type="checkbox"],
+input[type="radio"]{
+    width: auto;
+    margin-right: 5px;
+    box-shadow: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    color:#777;
+    border-color: rgba(85, 155, 255, 0.8);   
+}

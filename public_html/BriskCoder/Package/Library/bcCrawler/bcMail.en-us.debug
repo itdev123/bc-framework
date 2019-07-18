@@ -1,0 +1,8 @@
+[1]
+EDITOR  = 1
+TYPE    = "restriction"
+TITLE   = "initialization file not found"
+PROBLEM = "You have attempted to access the class {0} through the method {1}.
+           Although this method has public visibility It is an internal tsEngine system class and must not be used externally!"
+SOLUTION = "Remove the method {0} called."
+
